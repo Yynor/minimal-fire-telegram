@@ -11,19 +11,23 @@ const Index = () => {
   const features = [
     {
       title: "Качество",
-      description: "Мы гарантируем высокое качество отзывов от реальных пользователей"
+      description: "Мы гарантируем высокое качество отзывов от реальных пользователей",
+      icon: "⭐"
     },
     {
       title: "Скорость",
-      description: "Быстрое выполнение заказов в течение 24 часов"
+      description: "Быстрое выполнение заказов в течение 24 часов",
+      icon: "⚡"
     },
     {
       title: "Поддержка",
-      description: "Персональный менеджер для каждого клиента 24/7"
+      description: "Персональный менеджер для каждого клиента 24/7",
+      icon: "👥"
     },
     {
       title: "Гарантии",
-      description: "100% возврат средств при неудовлетворительном результате"
+      description: "100% возврат средств при неудовлетворительном результате",
+      icon: "🛡️"
     }
   ];
 
@@ -33,7 +37,7 @@ const Index = () => {
       
       <main className="container mx-auto px-4 pt-32 pb-20 relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-primary bg-300% animate-gradient">
             Профессиональная биржа отзывов
           </h1>
           
@@ -43,7 +47,7 @@ const Index = () => {
 
           <Button 
             onClick={handleTelegramClick}
-            className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground"
+            className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
           >
             Связаться с нами в Telegram
           </Button>
@@ -63,10 +67,10 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-foreground/60 text-sm">
             <div className="flex items-center space-x-4">
               <span>Контакты:</span>
-              <a href="https://t.me/yyn0r" className="hover:text-primary transition-colors">@yyn0r</a>
+              <a href="https://t.me/yyn0r" className="hover:text-primary transition-colors hover:scale-105 transform">@yyn0r</a>
             </div>
             <div>
-              <p>©2019-2025</p>
+              <p className="hover:text-primary transition-colors">©2019-2025</p>
             </div>
           </div>
         </div>

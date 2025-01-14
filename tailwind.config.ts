@@ -33,6 +33,9 @@ export default {
           foreground: "#FFFFFF",
         },
       },
+      backgroundSize: {
+        '300%': '300%',
+      },
       keyframes: {
         "firefly": {
           "0%": {
@@ -53,11 +56,20 @@ export default {
             opacity: "1",
             transform: "translateY(0)"
           }
+        },
+        "gradient": {
+          "0%, 100%": {
+            "background-position": "0% 50%"
+          },
+          "50%": {
+            "background-position": "100% 50%"
+          }
         }
       },
       animation: {
         "firefly": "firefly 5s linear infinite",
-        "fade-in-up": "fade-in-up 0.5s ease-out forwards"
+        "fade-in-up": "fade-in-up 0.5s ease-out forwards",
+        "gradient": "gradient 8s linear infinite"
       }
     },
   },
